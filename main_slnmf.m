@@ -1,9 +1,9 @@
 clear all;
 clc;
-load('Biase_data.mat')%Loading data
+load('Biase_data.mat')%Loading the normalized scRNA-seq data
 X=Data;%%%%%%%Rows are genes, columns are cell sample
     %==============Constructing a weight matrix==============
-    %Preset value before constructing weight matrix
+    %Preset value before constructing adjacency matrix
 options = [];
 option.Metric = 'Cosine';
 options.NeighborMode = 'KNN';%KNN
@@ -11,7 +11,7 @@ options.k =5;%5 nearest neighbors
 options.WeightMode = 'Cosine';%Weights are 0 or 1, it can eplace with 'HeatKernel', 'Euclidean' 
 W = constructW(X',options);
 
-M=PMI(W,1);%%%%Cell-cell network construction
+M=PMI(W,1);%%% High-order cell-cell PMI network construction
 k=3;lambda=10;iter=150;
 [B,F,nn,error]=slnmf(k,lambda,iter,M);  %% Call the main function to solve the variables
 %%%%%%%%%%% Clustering cell type label
