@@ -5,7 +5,7 @@ This is code to do structural learning non-negative matrix factorization cluster
 
 Wenming Wu, Xiaoke Ma*. "A Network-based Structural Learning Nonnegative Matrix Factorization Algorithm for Clustering of scRNA-seq Data"  
 
-The coding here is a generalization of the algorithm given in the paper. SLNMF is written in the MATLAB programming language. To use, please download the SLNMF folder and follow the tutorial provided in the “README.doc”. Running the "main_slnmf.m" file to realize SLNMF experiment. 
+The coding here is a generalization of the algorithm given in the paper. SLNMF is written in the MATLAB programming language. **To use, please download the SLNMF folder and follow the tutorial provided in the “README.doc”. Running the "main_slnmf.m" file to realize SLNMF experiment.** 
 
 Files description:
 
@@ -31,8 +31,8 @@ data$Biase.celltype.csv - The cell type of Biase dataset.
 
 Example:
 
-Follow the steps below to run SLNMF（also contained in the " main_slnmf.m" file）. Here use a real scRNA-seq data (Biase_data) set as an example.
-
+**Follow the steps below to run SLNMF（also contained in the " main_slnmf.m" file）. Here use a real scRNA-seq data (Biase_data) set as an example.
+**
 clear all;
 
 clc;
