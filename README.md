@@ -31,8 +31,8 @@ data$Biase.celltype.csv - The cell type of Biase dataset.
 
 Example:
 
-**Follow the steps below to run SLNMF（also contained in the " main_slnmf.m" file）. Here use a real scRNA-seq data (Biase_data) set as an example.
-**
+**Follow the steps below to run SLNMF（also contained in the " main_slnmf.m" file）. Here use a real scRNA-seq data (Biase_data) set as an example.**
+
 clear all;
 
 clc;
